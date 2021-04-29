@@ -21,6 +21,3 @@ if uploaded_file:
         vis = pyLDAvis.gensim_models.prepare(model, corpus, dictionary=id2word,mds='mmds')
         html = pyLDAvis.prepared_data_to_html(vis)
         components.v1.html(html, width=1300, height=800, scrolling=True)
-#f=codecs.open("Microsoft_Teams.html", 'r')
-#string_html=str(f.read())
-#components.v1.html(string_html, width=1300, height=800, scrolling=True)
